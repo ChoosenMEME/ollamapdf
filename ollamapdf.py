@@ -5,10 +5,11 @@ from langchain_community.embeddings import OllamaEmbeddings
 
 
 PDF_PATH = "HIER PFAD EINSETZEN" #C:/Users/Tim/Desktop
+MODEL = 'llama3'
 
 loader = PyPDFLoader(PDF_PATH)
 splits = loader.load_and_split()
-embeddings = OllamaEmbeddings(model="llama3")
+embeddings = OllamaEmbeddings(model=MODEL)
 vectorstore = Chroma.from_documents(documents=splits, embedding=embeddings)
 retriever = vectorstore.as_retriever()
 
@@ -17,7 +18,7 @@ while True:
     retrieved_docs = retriever.invoke(text)
     combine_docs = "\n\n".join(doc.page_content for doc in retrieved_docs)
     formatted_prompt = f"Frage: {text}\n\nKontext: {combine_docs}"
-    stream = ollama.chat(model='llama3', messages=[
+    stream = ollama.chat(model=MODEL, messages=[
         {'role': 'user',
          'content': 'Du bist ein Pdf-Chatbot und beantwortest Fragen ausschließlich auf Deutsch.' + formatted_prompt}],
         stream=True,
