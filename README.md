@@ -14,3 +14,4 @@
 7. ollamapdf.py in den Ordner kopieren
 8. ollamapdf.py bearbeiten und unter PDF_PATH = "HIER PFAD EINSETZEN" den Pfad zum gewünschten pdf eintragen
 9. `python ollamapdf.py`
+10. Anweisungen der konsole folgen
