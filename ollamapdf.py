@@ -4,7 +4,7 @@ from langchain_community.vectorstores import Chroma
 from langchain_community.embeddings import OllamaEmbeddings
 
 
-PDF_PATH = "C:/"
+PDF_PATH = "HIER PFAD EINSETZEN" #C:/Users/Tim/Desktop
 
 loader = PyPDFLoader(PDF_PATH)
 splits = loader.load_and_split()
