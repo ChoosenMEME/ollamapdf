@@ -13,7 +13,7 @@
 `venv\Scripts\activate.bat`\
 `pip install ollama langchain langchain_community chromadb pypdf`
 8. ollamapdf.py in den Ordner kopieren
-9. ollamapdf.py bearbeiten und unter PDF_PATH = "HIER PFAD EINSETZEN" den Pfad zum gewünschten pdf eintragen
-10. ollamapdf.py bearbeiten und unter MODEL = 'llama3' das in 2. gewählte Model ersetzen (z.B. 'qwen2:72b') 
+9. ollamapdf.py bearbeiten und unter `PDF_PATH = "HIER PFAD EINSETZEN"` den Pfad zum gewünschten pdf eintragen
+10. ollamapdf.py bearbeiten und unter `MODEL = 'llama3'` das in 2. gewählte Model ersetzen (z.B. 'qwen2:72b') 
 11. `python ollamapdf.py`
 12. Anweisungen der Konsole folgen
