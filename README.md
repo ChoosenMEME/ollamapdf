@@ -9,7 +9,7 @@
 5. `vs_buildtools.exe --norestart --passive --downloadThenInstall --includeRecommended --add Microsoft.VisualStudio.Workload.NativeDesktop --add Microsoft.VisualStudio.Workload.VCTools --add Microsoft.VisualStudio.Workload.MSBuildTools`
 6. Ordner für Dateien erstellen
 7. In der Konsole zu erstelltem Pfad navigieren (cmd)\
-`python -m venv venv`\
+`py -m venv venv`\
 `venv\Scripts\activate.bat`\
 `pip install ollama langchain langchain_community chromadb pypdf`
 8. ollamapdf.py in den Ordner kopieren
