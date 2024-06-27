@@ -42,6 +42,7 @@ while True:
                          # antwort nach und nach generieren
                          stream=True,
                          )
+    print("Antwort:\n")
     # Antwort nach und nach ausgeben
     for chunk in stream:
         print(chunk['message']['content'], end='', flush=True)
