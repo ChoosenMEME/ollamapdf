@@ -4,7 +4,7 @@
 
 1. [Python 3.12.4](https://www.python.org/downloads/) Installation
 2. Installation von [Ollama](https://ollama.com/)
-3. Konsole `ollama pull llama3` (Stall llama3 kann auch jedes beliebige Model dieser [Seite](https://ollama.com/library) verwendet werden (z.B. qwen2:72b))
+3. Konsole `ollama pull llama3` (Statt llama3(:8b) kann auch jedes beliebige Model dieser [Seite](https://ollama.com/library) verwendet werden (z.B. qwen2:72b oder llama3:70b))
 4. [Windows C++ Build Tools](https://visualstudio.microsoft.com/de/downloads/#build-tools-for-visual-studio-2022) herunterladen
 5. `vs_buildtools.exe --norestart --passive --downloadThenInstall --includeRecommended --add Microsoft.VisualStudio.Workload.NativeDesktop --add Microsoft.VisualStudio.Workload.VCTools --add Microsoft.VisualStudio.Workload.MSBuildTools`
 6. Ordner für Dateien erstellen
